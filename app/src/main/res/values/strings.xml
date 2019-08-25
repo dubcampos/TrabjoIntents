@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">TrabjoIntents</string>
+    <string name="app_name">TrabajoIntents</string>
+    <string name="tv_titulo">Log to new app</string>
+    <string name="et_nombre">Ingrese su nombre</string>
+    <string name="ps_password">Password</string>
+    <string name="btn_login">Login</string>
+    <string name="et_datos">ingrese su texto</string>
 </resources>
