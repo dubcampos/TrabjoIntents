@@ -8,4 +8,10 @@
     <string name="btn_atras">Atras</string>
     <string name="et_datos">ingrese su texto</string>
     <string name="btn_returnhome">Inicio</string>
+    <string name="pantalla1">PANTALLA 1</string>
+    <string name="pantalla2">PANTALLA 2</string>
+    <string name="pantalla3">PANTALLA 3</string>
+    <string name="pantalla4">PANTALLA 4</string>
+    <string name="btn_anterior">Anterior</string>
+    <string name="btn_sigueinte">Siguiente</string>
 </resources>

@@ -21,13 +21,13 @@ public class Ejercicio1_1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ejercicio1_1);
 
-        tv_usuario = findViewById(R.id.tv_usuario);
+        tv_usuario = (TextView) findViewById(R.id.tv_usuario);
         btn_returnhome = findViewById(R.id.btn_returnhome);
         btn_atras = findViewById(R.id.btn_atras);
 
 
         String temporal = getIntent().getStringExtra("dato_nombre");
-        tv_usuario.setText("Bienvenido "+ temporal);
+        tv_usuario.setText("¡Bienvenidx "+ temporal+"!");
 
     }
 

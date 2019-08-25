@@ -25,7 +25,8 @@
         android:layout_gravity="center"
         android:layout_weight="0.3"
         android:gravity="center"
-        android:text="@string/et_usuario" />
+        android:text="@string/et_usuario"
+        android:textSize="48sp" />
 
 
     <Space
