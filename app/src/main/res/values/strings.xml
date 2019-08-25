@@ -1,8 +1,11 @@
 <resources>
-    <string name="app_name">TrabajoIntents</string>
-    <string name="tv_titulo">Log to new app</string>
-    <string name="et_nombre">Ingrese su nombre</string>
+    <string name="app_name">Trabajo Intents</string>
+    <string name="tv_titulo1">Ejercicio 1</string>
+    <string name="tv_titulo2">Ejercicio 2</string>
+    <string name="et_usuario">Usuario</string>
     <string name="ps_password">Password</string>
     <string name="btn_login">Login</string>
+    <string name="btn_atras">Atras</string>
     <string name="et_datos">ingrese su texto</string>
+    <string name="btn_returnhome">Inicio</string>
 </resources>
