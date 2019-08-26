@@ -24,6 +24,18 @@ public class Ejercicio2_2 extends AppCompatActivity {
         btn_siguiente = findViewById(R.id.btn_siguiente);
         btn_anterior = findViewById(R.id.btn_anterior);
         btn_returnhome = findViewById(R.id.btn_returnhome);
+
+        String tv_original = tv_pantalla2.getText().toString();
+
+        String mensaje = getIntent().getStringExtra("mensaje");
+        tv_pantalla2.setText(mensaje);
+
+
+
+        if(tv_pantalla2.getText().equals("")||tv_pantalla2.getText().equals("PANTALLA 3")){
+            tv_pantalla2.setText(tv_original);
+        }
+
     }
 
     public void GoToPantalla3(View view){
@@ -32,8 +44,10 @@ public class Ejercicio2_2 extends AppCompatActivity {
     }
 
     public void GotoPantalla1(View view){
+        String temporal = tv_pantalla2.getText().toString();
         Intent gotop1 = new Intent(this,Ejercicio2.class);
-        startActivity(gotop1);
+        gotop1.putExtra("mensaje",temporal);
+        startActivity(gotop1);;
     }
 
 

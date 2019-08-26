@@ -12,7 +12,7 @@ public class Ejercicio2 extends AppCompatActivity {
 
     private Button btn_sigueinte;
     private Button btn_returnhome;
-    private TextView pantalla1;
+    private TextView tv_pantalla1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +20,19 @@ public class Ejercicio2 extends AppCompatActivity {
         setContentView(R.layout.activity_ejercicio2);
         btn_sigueinte = findViewById(R.id.btn_siguiente);
         btn_returnhome = findViewById(R.id.btn_returnhome);
-        pantalla1 = findViewById(R.id.tv_pantalla1);
+        tv_pantalla1 = findViewById(R.id.tv_pantalla1);
+
+        String tv_original = tv_pantalla1.getText().toString();
+
+        String mensaje = getIntent().getStringExtra("mensaje");
+        tv_pantalla1.setText(mensaje);
+
+
+
+        if(tv_pantalla1.getText().equals("")||tv_pantalla1.getText().equals("PANTALLA 2")){
+            tv_pantalla1.setText(tv_original);
+        }
+
     }
 
     public void GoToPantalla2(View view){

@@ -6,7 +6,7 @@
     <string name="ps_password">Password</string>
     <string name="btn_login">Login</string>
     <string name="btn_atras">Atras</string>
-    <string name="et_datos">Ingrese su texto...</string>
+    <string name="et_datos">Ingrese nuevo titulo de pantallas</string>
     <string name="btn_returnhome">Inicio</string>
     <string name="pantalla1">PANTALLA 1</string>
     <string name="pantalla2">PANTALLA 2</string>

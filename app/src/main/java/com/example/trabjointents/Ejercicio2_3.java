@@ -12,10 +12,10 @@ import org.w3c.dom.Text;
 
 public class Ejercicio2_3 extends AppCompatActivity {
 
-    Button btn_siguiente;
-    Button btn_anterior;
-    Button btn_returnhome;
-    TextView tv_pantalla3;
+    private Button btn_siguiente;
+    private Button btn_anterior;
+    private Button btn_returnhome;
+    private TextView tv_pantalla3;
 
 
     @Override
@@ -26,13 +26,26 @@ public class Ejercicio2_3 extends AppCompatActivity {
         btn_siguiente = findViewById(R.id.btn_siguiente);
         btn_anterior = findViewById(R.id.btn_anterior);
         btn_returnhome = findViewById(R.id.btn_returnhome);
-        tv_pantalla3 = findViewById(R.id.tv_pantalla3);
+        tv_pantalla3 = (TextView) findViewById(R.id.tv_pantalla3);
+
+        String tv_original = tv_pantalla3.getText().toString();
+
+        String mensaje = getIntent().getStringExtra("mensaje");
+        tv_pantalla3.setText(mensaje);
+
+
+
+        if(tv_pantalla3.getText().equals("")){
+            tv_pantalla3.setText(tv_original);
+        }
 
 
     }
 
     public void GoToPantalla2(View view){
+        String temporal = tv_pantalla3.getText().toString();
         Intent gotop2 = new Intent(this,Ejercicio2_2.class);
+        gotop2.putExtra("mensaje",temporal);
         startActivity(gotop2);
     }
 
