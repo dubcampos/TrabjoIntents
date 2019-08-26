@@ -47,6 +47,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.15"
-        android:text="@string/btn_returnhome" />
+        android:text="@string/btn_returnhome"
+        android:onClick="GoToInicio"/>
 
 </LinearLayout>

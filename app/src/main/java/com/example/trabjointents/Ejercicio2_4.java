@@ -31,4 +31,9 @@ public class Ejercicio2_4 extends AppCompatActivity {
         gotop3.putExtra("mensaje",temporal);
         startActivity(gotop3);
     }
+
+    public void GoToInicio(View view){
+        Intent gotohome = new Intent(this,Inicio.class);
+        startActivity(gotohome);
+    }
 }

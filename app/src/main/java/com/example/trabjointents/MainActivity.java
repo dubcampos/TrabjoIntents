@@ -46,6 +46,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void GoToInicio(View view){
+        Intent gotohome = new Intent(this,Inicio.class);
+        startActivity(gotohome);
+    }
+
 
 
 }

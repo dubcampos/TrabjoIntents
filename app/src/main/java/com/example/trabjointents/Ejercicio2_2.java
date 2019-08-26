@@ -10,10 +10,10 @@ import android.widget.TextView;
 
 public class Ejercicio2_2 extends AppCompatActivity {
 
-    TextView tv_pantalla2;
-    Button btn_siguiente;
-    Button btn_anterior;
-    Button btn_returnhome;
+    private TextView tv_pantalla2;
+    private Button btn_siguiente;
+    private Button btn_anterior;
+    private Button btn_returnhome;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +48,11 @@ public class Ejercicio2_2 extends AppCompatActivity {
         Intent gotop1 = new Intent(this,Ejercicio2.class);
         gotop1.putExtra("mensaje",temporal);
         startActivity(gotop1);;
+    }
+
+    public void GoToInicio(View view){
+        Intent gotohome = new Intent(this,Inicio.class);
+        startActivity(gotohome);
     }
 
 

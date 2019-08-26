@@ -39,4 +39,9 @@ public class Ejercicio2 extends AppCompatActivity {
         Intent gotop2 = new Intent(this,Ejercicio2_2.class);
         startActivity(gotop2);
     }
+
+    public void GoToInicio(View view){
+        Intent gotohome = new Intent(this,Inicio.class);
+        startActivity(gotohome);
+    }
 }
